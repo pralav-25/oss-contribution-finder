@@ -14,7 +14,10 @@ The tool detects signals of contributor-friendly repositories (CONTRIBUTING.md, 
 ## Install & Quick Start
 
 ```bash
-# Install from git (not yet on PyPI)
+# Install the latest release from PyPI
+pip install oss-contribution-finder
+
+# Or install the latest development version from Git
 pip install git+https://github.com/yunaremaia/oss-contribution-finder.git
 
 # Find Python good-first-issues
