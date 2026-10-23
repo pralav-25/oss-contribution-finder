@@ -594,6 +594,8 @@ def main():
     if args.sort == "friendliness":
         items.sort(key=lambda x: x.get("friendliness_score", 0), reverse=True)
 
+    items = dedupe_by_repo(items)
+
     # Format output
     formatters = {
         "table": format_table,
